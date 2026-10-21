@@ -1,0 +1,44 @@
+\hypertarget{_segment_8h_source}{}\doxysection{Segment.\+h}
+\mbox{\hyperlink{_segment_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_\_SEGMENT\_H\_\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_\_SEGMENT\_H\_\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include<stdlib.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include<limits>}}
+\DoxyCodeLine{6 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{10 \textcolor{keyword}{template}<\textcolor{keyword}{class} T>}
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_segment}{Segment}}\{}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13     \textcolor{keyword}{public}:}
+\DoxyCodeLine{14         \textcolor{comment}{//2 pairs indicating the lower and upper end points of the segment}}
+\DoxyCodeLine{15         pair<T,T> \mbox{\hyperlink{class_segment_af60de7a10a812b2a8e4bcd47292217bd}{pl}} , \mbox{\hyperlink{class_segment_a42de7de810a7d9baa9fb665c06e6fe2b}{pu}};}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{23         \mbox{\hyperlink{class_segment_aa12fd9ac1496b717a6951d69fefa9a32}{Segment}}(pair<T,T> p1 ,pair<T,T> p2)\{}
+\DoxyCodeLine{24             \textcolor{keywordflow}{if}(abs(p1.second-\/p2.second)<=0.00000005)\{ \textcolor{comment}{//if y coordinates are equal}}
+\DoxyCodeLine{25                 \textcolor{keywordflow}{if}(p1.first<p2.first)\{}
+\DoxyCodeLine{26                     \mbox{\hyperlink{class_segment_a42de7de810a7d9baa9fb665c06e6fe2b}{pu}}=p1;  \textcolor{comment}{//upper point is the one with smaller x coordinate}}
+\DoxyCodeLine{27                     \mbox{\hyperlink{class_segment_af60de7a10a812b2a8e4bcd47292217bd}{pl}}=p2;}
+\DoxyCodeLine{28                 \}}
+\DoxyCodeLine{29                 \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{30                     \mbox{\hyperlink{class_segment_a42de7de810a7d9baa9fb665c06e6fe2b}{pu}}=p2; \textcolor{comment}{//upper point is the one with smaller x coordinate}}
+\DoxyCodeLine{31                     \mbox{\hyperlink{class_segment_af60de7a10a812b2a8e4bcd47292217bd}{pl}}=p1;}
+\DoxyCodeLine{32                 \}}
+\DoxyCodeLine{33             \}}
+\DoxyCodeLine{34             \textcolor{keywordflow}{else}\{ \textcolor{comment}{//when y coordinates are distinct}}
+\DoxyCodeLine{35                 \textcolor{keywordflow}{if}(p1.second<p2.second)\{}
+\DoxyCodeLine{36                     \mbox{\hyperlink{class_segment_a42de7de810a7d9baa9fb665c06e6fe2b}{pu}}=p2; \textcolor{comment}{//upper point is the one with larger y coordinate}}
+\DoxyCodeLine{37                     \mbox{\hyperlink{class_segment_af60de7a10a812b2a8e4bcd47292217bd}{pl}}=p1;}
+\DoxyCodeLine{38                 \}}
+\DoxyCodeLine{39                 \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{40                     \mbox{\hyperlink{class_segment_a42de7de810a7d9baa9fb665c06e6fe2b}{pu}}=p1; \textcolor{comment}{//upper point is the one with larger y coordinate}}
+\DoxyCodeLine{41                     \mbox{\hyperlink{class_segment_af60de7a10a812b2a8e4bcd47292217bd}{pl}}=p2;}
+\DoxyCodeLine{42                 \}}
+\DoxyCodeLine{43             \}}
+\DoxyCodeLine{44         \}}
+\DoxyCodeLine{45 \};}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

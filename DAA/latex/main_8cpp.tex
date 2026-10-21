@@ -1,0 +1,59 @@
+\hypertarget{main_8cpp}{}\doxysection{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct timespec \mbox{\hyperlink{main_8cpp_acc5ad0c730d618ff7b5f3d69e4c0a868}{get\+\_\+time}} ()
+\begin{DoxyCompactList}\small\item\em Function to get the current time. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{main_8cpp_a5176180c6c33669b18394f9955833bd1}{get\+\_\+time\+\_\+diff}} (struct timespec st, struct timespec et)
+\begin{DoxyCompactList}\small\item\em Function to get the time difference between two given times. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_acc5ad0c730d618ff7b5f3d69e4c0a868}\label{main_8cpp_acc5ad0c730d618ff7b5f3d69e4c0a868}} 
+\index{main.cpp@{main.cpp}!get\_time@{get\_time}}
+\index{get\_time@{get\_time}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{get\_time()}{get\_time()}}
+{\footnotesize\ttfamily struct timespec get\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to get the current time. 
+
+\begin{DoxyReturn}{Returns}
+The current time 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a5176180c6c33669b18394f9955833bd1}\label{main_8cpp_a5176180c6c33669b18394f9955833bd1}} 
+\index{main.cpp@{main.cpp}!get\_time\_diff@{get\_time\_diff}}
+\index{get\_time\_diff@{get\_time\_diff}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{get\_time\_diff()}{get\_time\_diff()}}
+{\footnotesize\ttfamily double get\+\_\+time\+\_\+diff (\begin{DoxyParamCaption}\item[{struct timespec}]{st,  }\item[{struct timespec}]{et }\end{DoxyParamCaption})}
+
+
+
+Function to get the time difference between two given times. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em st} & Staring time \\
+\hline
+{\em et} & Ending time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Time Difference in seconds between the given times 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+

@@ -1,0 +1,326 @@
+\hypertarget{utils_8cpp}{}\doxysection{utils.\+cpp File Reference}
+\label{utils_8cpp}\index{utils.cpp@{utils.cpp}}
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{utils_8cpp_a354010b9ea24b630d673e3fa5cd2e652}{is\+Hor}} (\mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$s)
+\begin{DoxyCompactList}\small\item\em Check if the given segment is horizontal. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{utils_8cpp_adc2e8c295268782dc12e8c694bdb49cd}{is\+Ver}} (\mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$s)
+\begin{DoxyCompactList}\small\item\em Check if the given segment is verical. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{utils_8cpp_abfa77a43d3008e5bf6230fecd214dfd6}{is\+Contained}} (\mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$s, pair$<$ double, double $>$ p)
+\begin{DoxyCompactList}\small\item\em Check if the point is contained in the segment. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{utils_8cpp_aa7595a206d2209d6d3e60751af0d9a98}{does\+Intersect}} (\mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$Sl, \mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$Sr)
+\begin{DoxyCompactList}\small\item\em Check if the two segments can intersect. \end{DoxyCompactList}\item 
+pair$<$ double, double $>$ \mbox{\hyperlink{utils_8cpp_ada35be1502ee1fe37edb8d04c69e5feb}{intersection}} (\mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$s1, \mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$s2)
+\begin{DoxyCompactList}\small\item\em Find point of intersection of two given segments. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{utils_8cpp_ac3116ddcc3df85e718e2e89ffc4aff22}{sweep\+Intersection}} (\mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$s)
+\begin{DoxyCompactList}\small\item\em Find x coordinate of point of intersection of a given segment and sweep line. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{utils_8cpp_a2b8c31cc52f0805aa9068a9dcf84dc83}{Q\+\_\+cmp}} (\mbox{\hyperlink{class_point}{Point}}$<$ double $>$ $\ast$p1, \mbox{\hyperlink{class_point}{Point}}$<$ double $>$ $\ast$p2)
+\begin{DoxyCompactList}\small\item\em Comparator function of the event queue\+: comparision done on basis of y coordinates first i.\+e the point with greater y coordinate is the greater one; if y coordinates are equal, the point with lesser x coordinate is the greater one. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{utils_8cpp_a0c295390053492b42bf51a79cd15b445}{T\+\_\+cmp}} (\mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$s1, \mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$s2)
+\begin{DoxyCompactList}\small\item\em Comparator function of the status queue\+: comparision done on basis of x coordinate of points of intersection of the segments with the sweep line. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_v_l_tree}{AVLTree}}$<$ \mbox{\hyperlink{class_point}{Point}}$<$ double $>$ $\ast$ $>$ \mbox{\hyperlink{utils_8cpp_afa95f1b662a9541404332c8174d34107}{Q}} (\mbox{\hyperlink{utils_8h_a2b8c31cc52f0805aa9068a9dcf84dc83}{Q\+\_\+cmp}})
+\item 
+\mbox{\hyperlink{class_a_v_l_tree}{AVLTree}}$<$ \mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$ $>$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} (\mbox{\hyperlink{utils_8h_a0c295390053492b42bf51a79cd15b445}{T\+\_\+cmp}})
+\item 
+int \mbox{\hyperlink{utils_8cpp_a5ca6bd124fb9fcaba34a1562205a0bc1}{find\+Intersections}} (vector$<$ \mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$ $>$ S, int n)
+\begin{DoxyCompactList}\small\item\em Find intersections among the given set S of line segments. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{utils_8cpp_a5162984501235d40aa4660184e491222}{handle\+Event\+Point}} (\mbox{\hyperlink{class_point}{Point}}$<$ double $>$ $\ast$p)
+\begin{DoxyCompactList}\small\item\em Updates the status queue and checks adjacent pairs for intersection; also prints if the given event point is an intersection point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{utils_8cpp_a1f8654cc869c28d3b35c3bed51d42313}{find\+New\+Event}} (\mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$Sl, \mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$Sr, \mbox{\hyperlink{class_point}{Point}}$<$ double $>$ $\ast$p)
+\begin{DoxyCompactList}\small\item\em Check if the segments meet to the right of or below the event point; if yes insert intersection point to event queue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{utils_8cpp_adae247c0ff8514f7cd920a0b3afaef32}{report\+Intersection}} (\mbox{\hyperlink{class_point}{Point}}$<$ double $>$ $\ast$p)
+\begin{DoxyCompactList}\small\item\em Function to report the intersection point p. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{utils_8cpp_aaf7b91ef7646f48d94389855ddfb50c4}{find\+Intersection}} (vector$<$ \mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$ $>$ S, int n)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{utils_8cpp_afd34566fdbd8e7f8f4d5b750a3040191}{noi}} = 0
+\item 
+double \mbox{\hyperlink{utils_8cpp_a1031d0e0a97a340abfe0a6ab9e831045}{a}} = 0
+\item 
+FILE $\ast$ \mbox{\hyperlink{utils_8cpp_ab7b67d2719d79a70f1ec8cd2a55dfac7}{pt\+\_\+file}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{utils_8cpp_aa7595a206d2209d6d3e60751af0d9a98}\label{utils_8cpp_aa7595a206d2209d6d3e60751af0d9a98}} 
+\index{utils.cpp@{utils.cpp}!doesIntersect@{doesIntersect}}
+\index{doesIntersect@{doesIntersect}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{doesIntersect()}{doesIntersect()}}
+{\footnotesize\ttfamily bool does\+Intersect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$}]{Sl,  }\item[{\mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$}]{Sr }\end{DoxyParamCaption})}
+
+
+
+Check if the two segments can intersect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Sl} & Pointer to the first segment \\
+\hline
+{\em Sr} & Pointer to the second segment \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the two segments can intersect 
+
+False otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{utils_8cpp_aaf7b91ef7646f48d94389855ddfb50c4}\label{utils_8cpp_aaf7b91ef7646f48d94389855ddfb50c4}} 
+\index{utils.cpp@{utils.cpp}!findIntersection@{findIntersection}}
+\index{findIntersection@{findIntersection}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{findIntersection()}{findIntersection()}}
+{\footnotesize\ttfamily int find\+Intersection (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$ $>$}]{S,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{utils_8cpp_a5ca6bd124fb9fcaba34a1562205a0bc1}\label{utils_8cpp_a5ca6bd124fb9fcaba34a1562205a0bc1}} 
+\index{utils.cpp@{utils.cpp}!findIntersections@{findIntersections}}
+\index{findIntersections@{findIntersections}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{findIntersections()}{findIntersections()}}
+{\footnotesize\ttfamily int find\+Intersections (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$ $>$}]{S,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Find intersections among the given set S of line segments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S} & Set of line segments \\
+\hline
+{\em n} & Number of line segments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of points of intersection 
+\end{DoxyReturn}
+\mbox{\Hypertarget{utils_8cpp_a1f8654cc869c28d3b35c3bed51d42313}\label{utils_8cpp_a1f8654cc869c28d3b35c3bed51d42313}} 
+\index{utils.cpp@{utils.cpp}!findNewEvent@{findNewEvent}}
+\index{findNewEvent@{findNewEvent}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{findNewEvent()}{findNewEvent()}}
+{\footnotesize\ttfamily void find\+New\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$}]{Sl,  }\item[{\mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$}]{Sr,  }\item[{\mbox{\hyperlink{class_point}{Point}}$<$ double $>$ $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Check if the segments meet to the right of or below the event point; if yes insert intersection point to event queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Sl} & Pointer to the first segment \\
+\hline
+{\em Sr} & Pointer to the second segment \\
+\hline
+{\em p} & Pointer to the event point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{utils_8cpp_a5162984501235d40aa4660184e491222}\label{utils_8cpp_a5162984501235d40aa4660184e491222}} 
+\index{utils.cpp@{utils.cpp}!handleEventPoint@{handleEventPoint}}
+\index{handleEventPoint@{handleEventPoint}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{handleEventPoint()}{handleEventPoint()}}
+{\footnotesize\ttfamily void handle\+Event\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}$<$ double $>$ $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Updates the status queue and checks adjacent pairs for intersection; also prints if the given event point is an intersection point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pointer to the given event point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{utils_8cpp_ada35be1502ee1fe37edb8d04c69e5feb}\label{utils_8cpp_ada35be1502ee1fe37edb8d04c69e5feb}} 
+\index{utils.cpp@{utils.cpp}!intersection@{intersection}}
+\index{intersection@{intersection}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{intersection()}{intersection()}}
+{\footnotesize\ttfamily pair$<$ double, double $>$ intersection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$}]{s1,  }\item[{\mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$}]{s2 }\end{DoxyParamCaption})}
+
+
+
+Find point of intersection of two given segments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s1} & Pointer to the first segment \\
+\hline
+{\em s2} & Pointer to the second segment \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An ordered pair which is the point of s1 and s2 
+\end{DoxyReturn}
+\mbox{\Hypertarget{utils_8cpp_abfa77a43d3008e5bf6230fecd214dfd6}\label{utils_8cpp_abfa77a43d3008e5bf6230fecd214dfd6}} 
+\index{utils.cpp@{utils.cpp}!isContained@{isContained}}
+\index{isContained@{isContained}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{isContained()}{isContained()}}
+{\footnotesize\ttfamily bool is\+Contained (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$}]{s,  }\item[{pair$<$ double, double $>$}]{p }\end{DoxyParamCaption})}
+
+
+
+Check if the point is contained in the segment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Pointer to the segment \\
+\hline
+{\em p} & The point to be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the point is contained in the segment 
+
+False otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{utils_8cpp_a354010b9ea24b630d673e3fa5cd2e652}\label{utils_8cpp_a354010b9ea24b630d673e3fa5cd2e652}} 
+\index{utils.cpp@{utils.cpp}!isHor@{isHor}}
+\index{isHor@{isHor}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{isHor()}{isHor()}}
+{\footnotesize\ttfamily bool is\+Hor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Check if the given segment is horizontal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Pointer to the segment \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the segment is horizontal 
+
+False otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{utils_8cpp_adc2e8c295268782dc12e8c694bdb49cd}\label{utils_8cpp_adc2e8c295268782dc12e8c694bdb49cd}} 
+\index{utils.cpp@{utils.cpp}!isVer@{isVer}}
+\index{isVer@{isVer}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{isVer()}{isVer()}}
+{\footnotesize\ttfamily bool is\+Ver (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Check if the given segment is verical. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Pointer to the segment \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the segment is vertical 
+
+False otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{utils_8cpp_afa95f1b662a9541404332c8174d34107}\label{utils_8cpp_afa95f1b662a9541404332c8174d34107}} 
+\index{utils.cpp@{utils.cpp}!Q@{Q}}
+\index{Q@{Q}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{Q()}{Q()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_a_v_l_tree}{AVLTree}}$<$ \mbox{\hyperlink{class_point}{Point}}$<$ double $>$ $\ast$ $>$ Q (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{utils_8h_a2b8c31cc52f0805aa9068a9dcf84dc83}{Q\+\_\+cmp}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{utils_8cpp_a2b8c31cc52f0805aa9068a9dcf84dc83}\label{utils_8cpp_a2b8c31cc52f0805aa9068a9dcf84dc83}} 
+\index{utils.cpp@{utils.cpp}!Q\_cmp@{Q\_cmp}}
+\index{Q\_cmp@{Q\_cmp}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{Q\_cmp()}{Q\_cmp()}}
+{\footnotesize\ttfamily int Q\+\_\+cmp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}$<$ double $>$ $\ast$}]{p1,  }\item[{\mbox{\hyperlink{class_point}{Point}}$<$ double $>$ $\ast$}]{p2 }\end{DoxyParamCaption})}
+
+
+
+Comparator function of the event queue\+: comparision done on basis of y coordinates first i.\+e the point with greater y coordinate is the greater one; if y coordinates are equal, the point with lesser x coordinate is the greater one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & Pointer to first event point \\
+\hline
+{\em p2} & Pointer to second event point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 if p1\texorpdfstring{$<$}{<}p2 
+
+0 if p1==p2 
+
+1 if p1\texorpdfstring{$>$}{>}p2 
+\end{DoxyReturn}
+\mbox{\Hypertarget{utils_8cpp_adae247c0ff8514f7cd920a0b3afaef32}\label{utils_8cpp_adae247c0ff8514f7cd920a0b3afaef32}} 
+\index{utils.cpp@{utils.cpp}!reportIntersection@{reportIntersection}}
+\index{reportIntersection@{reportIntersection}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{reportIntersection()}{reportIntersection()}}
+{\footnotesize\ttfamily void report\+Intersection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}$<$ double $>$ $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Function to report the intersection point p. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pointer to the event point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{utils_8cpp_ac3116ddcc3df85e718e2e89ffc4aff22}\label{utils_8cpp_ac3116ddcc3df85e718e2e89ffc4aff22}} 
+\index{utils.cpp@{utils.cpp}!sweepIntersection@{sweepIntersection}}
+\index{sweepIntersection@{sweepIntersection}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{sweepIntersection()}{sweepIntersection()}}
+{\footnotesize\ttfamily double sweep\+Intersection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Find x coordinate of point of intersection of a given segment and sweep line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Pointer to the segment \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+x coordinate of point of intersection of a given segment and sweep line 
+\end{DoxyReturn}
+\mbox{\Hypertarget{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}\label{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}} 
+\index{utils.cpp@{utils.cpp}!T@{T}}
+\index{T@{T}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{T()}{T()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_a_v_l_tree}{AVLTree}}$<$ \mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$ $>$ T (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{utils_8h_a0c295390053492b42bf51a79cd15b445}{T\+\_\+cmp}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{utils_8cpp_a0c295390053492b42bf51a79cd15b445}\label{utils_8cpp_a0c295390053492b42bf51a79cd15b445}} 
+\index{utils.cpp@{utils.cpp}!T\_cmp@{T\_cmp}}
+\index{T\_cmp@{T\_cmp}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{T\_cmp()}{T\_cmp()}}
+{\footnotesize\ttfamily int T\+\_\+cmp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$}]{s1,  }\item[{\mbox{\hyperlink{class_segment}{Segment}}$<$ double $>$ $\ast$}]{s2 }\end{DoxyParamCaption})}
+
+
+
+Comparator function of the status queue\+: comparision done on basis of x coordinate of points of intersection of the segments with the sweep line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s1} & Pointer to first segment \\
+\hline
+{\em s2} & Pointer to second segment \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 if s1\texorpdfstring{$<$}{<}s2 
+
+0 if s1==s2 
+
+1 if s1\texorpdfstring{$>$}{>}s2 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{utils_8cpp_a1031d0e0a97a340abfe0a6ab9e831045}\label{utils_8cpp_a1031d0e0a97a340abfe0a6ab9e831045}} 
+\index{utils.cpp@{utils.cpp}!a@{a}}
+\index{a@{a}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily double a = 0}
+
+\mbox{\Hypertarget{utils_8cpp_afd34566fdbd8e7f8f4d5b750a3040191}\label{utils_8cpp_afd34566fdbd8e7f8f4d5b750a3040191}} 
+\index{utils.cpp@{utils.cpp}!noi@{noi}}
+\index{noi@{noi}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{noi}{noi}}
+{\footnotesize\ttfamily int noi = 0}
+
+\mbox{\Hypertarget{utils_8cpp_ab7b67d2719d79a70f1ec8cd2a55dfac7}\label{utils_8cpp_ab7b67d2719d79a70f1ec8cd2a55dfac7}} 
+\index{utils.cpp@{utils.cpp}!pt\_file@{pt\_file}}
+\index{pt\_file@{pt\_file}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{pt\_file}{pt\_file}}
+{\footnotesize\ttfamily FILE$\ast$ pt\+\_\+file}
+

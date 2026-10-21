@@ -1,0 +1,44 @@
+\hypertarget{_a_v_l_node_8h_source}{}\doxysection{AVLNode.\+h}
+\label{_a_v_l_node_8h_source}\index{AVL/AVLNode.h@{AVL/AVLNode.h}}
+\mbox{\hyperlink{_a_v_l_node_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_\_AVL\_NODE\_H\_\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_\_AVL\_NODE\_H\_\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <cstddef>}}
+\DoxyCodeLine{9 \textcolor{keyword}{template}<\textcolor{keyword}{class} T>}
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}\{}
+\DoxyCodeLine{11     }
+\DoxyCodeLine{12     \textcolor{keyword}{public}:}
+\DoxyCodeLine{19         \mbox{\hyperlink{class_a_v_l_node_a25a02eb8e0022de8f74c57de98333a78}{AVLNode}}(\textcolor{keyword}{const} \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}}\& value) : \mbox{\hyperlink{class_a_v_l_node_ab08e416fe66d8a13f8f9431c25baed79}{data}}(value) , \mbox{\hyperlink{class_a_v_l_node_a7a9fcdb847842e26a795337dcdca273b}{left}}(NULL) , \mbox{\hyperlink{class_a_v_l_node_a506817bc14b2a3012526dd7a832013cc}{right}}(NULL) , \mbox{\hyperlink{class_a_v_l_node_a04910843d3ea0111eb3dcfe92a8f7588}{height}}(1) \{\}}
+\DoxyCodeLine{20         \mbox{\hyperlink{class_a_v_l_node_afbfa0dcfaf3b0b7d73edcc6a5019d582}{\string~AVLNode}}() \{\}}
+\DoxyCodeLine{25         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_a_v_l_node_a58e21f542d5d23f3f7a9a8e967d636d1}{getHeight}}();}
+\DoxyCodeLine{30         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_a_v_l_node_aface9e90479a2ceea04f994846780488}{getBF}}();}
+\DoxyCodeLine{31         \textcolor{comment}{//data value}}
+\DoxyCodeLine{32         \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} \mbox{\hyperlink{class_a_v_l_node_ab08e416fe66d8a13f8f9431c25baed79}{data}};}
+\DoxyCodeLine{33         \textcolor{comment}{//pointer to left child}}
+\DoxyCodeLine{34         \mbox{\hyperlink{class_a_v_l_node}{AVLNode}}* \mbox{\hyperlink{class_a_v_l_node_a7a9fcdb847842e26a795337dcdca273b}{left}};}
+\DoxyCodeLine{35         \textcolor{comment}{//pointer to right child}}
+\DoxyCodeLine{36         \mbox{\hyperlink{class_a_v_l_node}{AVLNode}}* \mbox{\hyperlink{class_a_v_l_node_a506817bc14b2a3012526dd7a832013cc}{right}};}
+\DoxyCodeLine{37         \textcolor{comment}{//height of the node}}
+\DoxyCodeLine{38         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_a_v_l_node_a04910843d3ea0111eb3dcfe92a8f7588}{height}};}
+\DoxyCodeLine{39 \};}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 \textcolor{keyword}{template}<\textcolor{keyword}{class} T>}
+\DoxyCodeLine{42 \textcolor{keywordtype}{int} \mbox{\hyperlink{class_a_v_l_node_a58e21f542d5d23f3f7a9a8e967d636d1}{AVLNode<T>::getHeight}}()\{}
+\DoxyCodeLine{43     \textcolor{keywordflow}{if}(\textcolor{keyword}{this} == NULL)}
+\DoxyCodeLine{44         \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{45     \textcolor{keywordflow}{return} \textcolor{keyword}{this} -\/> height;}
+\DoxyCodeLine{46 \}}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 \textcolor{keyword}{template}<\textcolor{keyword}{class} T>}
+\DoxyCodeLine{49 \textcolor{keywordtype}{int} \mbox{\hyperlink{class_a_v_l_node_aface9e90479a2ceea04f994846780488}{AVLNode<T>::getBF}}()\{}
+\DoxyCodeLine{50     \textcolor{keywordflow}{if}(\textcolor{keyword}{this} == NULL)}
+\DoxyCodeLine{51         \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{52     \textcolor{keywordflow}{return} \textcolor{keyword}{this} -\/> left -\/> getHeight() -\/ \textcolor{keyword}{this} -\/> right -\/> getHeight();}
+\DoxyCodeLine{53 \}}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// \_\_AVL\_NODE\_H\_\_}}
+
+\end{DoxyCode}

@@ -1,0 +1,29 @@
+\hypertarget{_point_8h_source}{}\doxysection{Point.\+h}
+\mbox{\hyperlink{_point_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_\_POINT\_H\_\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_\_POINT\_H\_\_}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_segment_8h}{Segment.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 }
+\DoxyCodeLine{11 \textcolor{keyword}{template}<\textcolor{keyword}{class} T>}
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_point}{Point}}\{}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14     \textcolor{keyword}{public}:}
+\DoxyCodeLine{15         \textcolor{comment}{//x coordinate of the point}}
+\DoxyCodeLine{16         \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} \mbox{\hyperlink{class_point_a401d07562afaf0079121218025e66b76}{x}};}
+\DoxyCodeLine{17         \textcolor{comment}{//y coordinate of the point}}
+\DoxyCodeLine{18         \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} \mbox{\hyperlink{class_point_a65146418a33ebb2cd9acb85cade60ac9}{y}};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{26         \mbox{\hyperlink{class_point_ab9882dab336d6a7b94c2d1c45e0635ef}{Point}}(\textcolor{keyword}{const} \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}}\& X , \textcolor{keyword}{const} \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}}\& Y) : \mbox{\hyperlink{class_point_a401d07562afaf0079121218025e66b76}{x}}(X) , \mbox{\hyperlink{class_point_a65146418a33ebb2cd9acb85cade60ac9}{y}}(Y) \{\}}
+\DoxyCodeLine{27         vector< Segment<T>* > \mbox{\hyperlink{class_point_a94d204e6888717d86ae5d9c3548abc0f}{L}}; \textcolor{comment}{//storing L(p)}}
+\DoxyCodeLine{28         vector< Segment<T>* > \mbox{\hyperlink{class_point_a35dd7c8066fe1044d87a9d25d45608cd}{C}}; \textcolor{comment}{//storing U(p)}}
+\DoxyCodeLine{29         vector< Segment<T>* > \mbox{\hyperlink{class_point_a152793cd0ff44aeb8a3d7eaf792b06c8}{U}}; \textcolor{comment}{//storing C(p)}}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \};}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// \_\_POINT\_H\_\_}}
+
+\end{DoxyCode}

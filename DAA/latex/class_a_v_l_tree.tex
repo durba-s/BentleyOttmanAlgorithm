@@ -1,0 +1,425 @@
+\hypertarget{class_a_v_l_tree}{}\doxysection{AVLTree\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\label{class_a_v_l_tree}\index{AVLTree$<$ T $>$@{AVLTree$<$ T $>$}}
+
+
+Class to store an AVL Tree.  
+
+
+
+
+{\ttfamily \#include $<$AVLTree.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_v_l_tree_a969c9c3cb990b1d79357cde4ecb6bb6b}{AVLTree}} (int($\ast$\+\_\+cmp)(\mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}}, \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}}))
+\begin{DoxyCompactList}\small\item\em Constructor of an AVL tree, which consists of the data type of the data values in the tree, a comparator function and creates an empty AVL tree consisting of a NULL root node. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_v_l_tree_ae7bb44a235074a48d817acbc32846ae7}{$\sim$\+AVLTree}} ()
+\item 
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree_aadf22099dc75a4d91baedc02896827d0}{left\+Rotate}} (\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$y)
+\begin{DoxyCompactList}\small\item\em Function to left rotate at a node. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree_a8056deee1d30dc8a3547ce193c72d048}{right\+Rotate}} (\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$x)
+\begin{DoxyCompactList}\small\item\em Function to right rotate at a node. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree_a858c71ef796e8a26366f1f0f63830342}{balance}} (\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$node, \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} key)
+\begin{DoxyCompactList}\small\item\em Function to balance height at a node. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree_a87d816e7556ace89845c851d16851312}{find\+Min}} (\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$node)
+\begin{DoxyCompactList}\small\item\em Function to find the minimum element of the AVL Tree. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree_a4c3aa2ac78e409b81756e71362a8142f}{find\+Max}} (\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$node)
+\begin{DoxyCompactList}\small\item\em Function to find the maximum element of the AVL Tree. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree_ad4d48a1bd3ffe5f30ed3320474e818a4}{successor}} (\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ro, \mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$node)
+\begin{DoxyCompactList}\small\item\em Function to find the successor to the given node of the AVL tree. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree_a484b873a133486d318b7e0d72c9c9a3d}{predecessor}} (\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ro, \mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$node)
+\begin{DoxyCompactList}\small\item\em Function to find the predecessor to the given node of the AVL tree. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree_a5b09f689c4f180734665b7ed70b9e21c}{find\+\_\+right}} (\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$node, \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} key)
+\begin{DoxyCompactList}\small\item\em Function to find the node having least data value greater than or equal to key. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree_a0f4906a0ccbeb944c1460eb098963cc8}{find\+\_\+left}} (\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$node, \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} key)
+\begin{DoxyCompactList}\small\item\em Function to find the node having greatest data value less than or equal to key. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_v_l_tree_a927bd30501e7730318348bf8b7ec9848}{insert}} (\mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} key)
+\begin{DoxyCompactList}\small\item\em Function to insert a node into the AVL tree. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_v_l_tree_ade818c5c2e65452067eeabe7d6805f05}{remove}} (\mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} key)
+\begin{DoxyCompactList}\small\item\em Function to delete a node from an AVL tree. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree_a502a38fdc467269fc319f14681a7ac18}{search}} (\mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} key)
+\begin{DoxyCompactList}\small\item\em Function to find the node having data value equal to the key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree_a105ef59828145f6465c4fe3620342f5f}{root}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree_a314c787ec96fabf4fedd46054cfb4365}{\+\_\+insert}} (\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$node, \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} key)
+\begin{DoxyCompactList}\small\item\em Insert to AVL Tree and balance at the point of insertion. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree_a231554eb45f5b9ceaa66b3fd1051160c}{\+\_\+remove}} (\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$node, \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} key)
+\begin{DoxyCompactList}\small\item\em Delete from AVL Tree and balance at the point of deletion. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree_a91134c644a402927f4dfcd0e10ea62e1}{\+\_\+search}} (\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$node, \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} key)
+\begin{DoxyCompactList}\small\item\em Search in AVL Tree. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int($\ast$ \mbox{\hyperlink{class_a_v_l_tree_a6786acad42810093ea3dbfdf24234e29}{cmp}} )(\mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}}, \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}})
+\begin{DoxyCompactList}\small\item\em Comparator function of the AVL Tree. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}}$>$\newline
+class AVLTree$<$ T $>$}
+Class to store an AVL Tree. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_v_l_tree_a969c9c3cb990b1d79357cde4ecb6bb6b}\label{class_a_v_l_tree_a969c9c3cb990b1d79357cde4ecb6bb6b}} 
+\index{AVLTree$<$ T $>$@{AVLTree$<$ T $>$}!AVLTree@{AVLTree}}
+\index{AVLTree@{AVLTree}!AVLTree$<$ T $>$@{AVLTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{AVLTree()}{AVLTree()}}
+{\footnotesize\ttfamily template$<$class \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ \\
+\mbox{\hyperlink{class_a_v_l_tree}{AVLTree}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$\+::\mbox{\hyperlink{class_a_v_l_tree}{AVLTree}} (\begin{DoxyParamCaption}\item[{int($\ast$)(\mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}}, \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}})}]{\+\_\+cmp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor of an AVL tree, which consists of the data type of the data values in the tree, a comparator function and creates an empty AVL tree consisting of a NULL root node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmp} & comparator function for the tree \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_v_l_tree_ae7bb44a235074a48d817acbc32846ae7}\label{class_a_v_l_tree_ae7bb44a235074a48d817acbc32846ae7}} 
+\index{AVLTree$<$ T $>$@{AVLTree$<$ T $>$}!````~AVLTree@{$\sim$AVLTree}}
+\index{````~AVLTree@{$\sim$AVLTree}!AVLTree$<$ T $>$@{AVLTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$AVLTree()}{~AVLTree()}}
+{\footnotesize\ttfamily template$<$class \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ \\
+\mbox{\hyperlink{class_a_v_l_tree}{AVLTree}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$\+::$\sim$\mbox{\hyperlink{class_a_v_l_tree}{AVLTree}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_v_l_tree_a314c787ec96fabf4fedd46054cfb4365}\label{class_a_v_l_tree_a314c787ec96fabf4fedd46054cfb4365}} 
+\index{AVLTree$<$ T $>$@{AVLTree$<$ T $>$}!\_insert@{\_insert}}
+\index{\_insert@{\_insert}!AVLTree$<$ T $>$@{AVLTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\_insert()}{\_insert()}}
+{\footnotesize\ttfamily template$<$class \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ \\
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree}{AVLTree}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$\+::\+\_\+insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$}]{node,  }\item[{\mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}}}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Insert to AVL Tree and balance at the point of insertion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Pointer to root \\
+\hline
+{\em key} & Key to be inserted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to node at the point of insertion after balancing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_v_l_tree_a231554eb45f5b9ceaa66b3fd1051160c}\label{class_a_v_l_tree_a231554eb45f5b9ceaa66b3fd1051160c}} 
+\index{AVLTree$<$ T $>$@{AVLTree$<$ T $>$}!\_remove@{\_remove}}
+\index{\_remove@{\_remove}!AVLTree$<$ T $>$@{AVLTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\_remove()}{\_remove()}}
+{\footnotesize\ttfamily template$<$class \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ \\
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree}{AVLTree}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$\+::\+\_\+remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$}]{node,  }\item[{\mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}}}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Delete from AVL Tree and balance at the point of deletion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Pointer to root \\
+\hline
+{\em key} & Key to be deleted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to node at the point of deletion after balancing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_v_l_tree_a91134c644a402927f4dfcd0e10ea62e1}\label{class_a_v_l_tree_a91134c644a402927f4dfcd0e10ea62e1}} 
+\index{AVLTree$<$ T $>$@{AVLTree$<$ T $>$}!\_search@{\_search}}
+\index{\_search@{\_search}!AVLTree$<$ T $>$@{AVLTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\_search()}{\_search()}}
+{\footnotesize\ttfamily template$<$class \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ \\
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree}{AVLTree}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$\+::\+\_\+search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$}]{node,  }\item[{\mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}}}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Search in AVL Tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Pointer to root \\
+\hline
+{\em key} & Key to be searched \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to node whose data value equals key 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_v_l_tree_a858c71ef796e8a26366f1f0f63830342}\label{class_a_v_l_tree_a858c71ef796e8a26366f1f0f63830342}} 
+\index{AVLTree$<$ T $>$@{AVLTree$<$ T $>$}!balance@{balance}}
+\index{balance@{balance}!AVLTree$<$ T $>$@{AVLTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{balance()}{balance()}}
+{\footnotesize\ttfamily template$<$class \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ \\
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree}{AVLTree}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$\+::balance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$}]{node,  }\item[{\mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}}}]{key }\end{DoxyParamCaption})}
+
+
+
+Function to balance height at a node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Current AVL node \\
+\hline
+{\em key} & The Newly inserted key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An AVL node pointer after balancing at the node 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_v_l_tree_a0f4906a0ccbeb944c1460eb098963cc8}\label{class_a_v_l_tree_a0f4906a0ccbeb944c1460eb098963cc8}} 
+\index{AVLTree$<$ T $>$@{AVLTree$<$ T $>$}!find\_left@{find\_left}}
+\index{find\_left@{find\_left}!AVLTree$<$ T $>$@{AVLTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{find\_left()}{find\_left()}}
+{\footnotesize\ttfamily template$<$class \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ \\
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree}{AVLTree}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$\+::find\+\_\+left (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$}]{node,  }\item[{\mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}}}]{key }\end{DoxyParamCaption})}
+
+
+
+Function to find the node having greatest data value less than or equal to key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The pointer to the root of the tree \\
+\hline
+{\em key} & The key value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the node having greatest data value less than or equal to key 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_v_l_tree_a5b09f689c4f180734665b7ed70b9e21c}\label{class_a_v_l_tree_a5b09f689c4f180734665b7ed70b9e21c}} 
+\index{AVLTree$<$ T $>$@{AVLTree$<$ T $>$}!find\_right@{find\_right}}
+\index{find\_right@{find\_right}!AVLTree$<$ T $>$@{AVLTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{find\_right()}{find\_right()}}
+{\footnotesize\ttfamily template$<$class \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ \\
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree}{AVLTree}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$\+::find\+\_\+right (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$}]{node,  }\item[{\mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}}}]{key }\end{DoxyParamCaption})}
+
+
+
+Function to find the node having least data value greater than or equal to key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The pointer to the root of the tree \\
+\hline
+{\em key} & The key value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the node having least data value greater than or equal to key 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_v_l_tree_a4c3aa2ac78e409b81756e71362a8142f}\label{class_a_v_l_tree_a4c3aa2ac78e409b81756e71362a8142f}} 
+\index{AVLTree$<$ T $>$@{AVLTree$<$ T $>$}!findMax@{findMax}}
+\index{findMax@{findMax}!AVLTree$<$ T $>$@{AVLTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{findMax()}{findMax()}}
+{\footnotesize\ttfamily template$<$class \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ \\
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree}{AVLTree}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$\+::find\+Max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$}]{node }\end{DoxyParamCaption})}
+
+
+
+Function to find the maximum element of the AVL Tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The root of the subtree whose maximum element has to be found \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the AVL node having the maximum data value in the subtree 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_v_l_tree_a87d816e7556ace89845c851d16851312}\label{class_a_v_l_tree_a87d816e7556ace89845c851d16851312}} 
+\index{AVLTree$<$ T $>$@{AVLTree$<$ T $>$}!findMin@{findMin}}
+\index{findMin@{findMin}!AVLTree$<$ T $>$@{AVLTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{findMin()}{findMin()}}
+{\footnotesize\ttfamily template$<$class \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ \\
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree}{AVLTree}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$\+::find\+Min (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$}]{node }\end{DoxyParamCaption})}
+
+
+
+Function to find the minimum element of the AVL Tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The root of the subtree whose minimum element has to be found \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the AVL node having the minimum data value in the subtree 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_v_l_tree_a927bd30501e7730318348bf8b7ec9848}\label{class_a_v_l_tree_a927bd30501e7730318348bf8b7ec9848}} 
+\index{AVLTree$<$ T $>$@{AVLTree$<$ T $>$}!insert@{insert}}
+\index{insert@{insert}!AVLTree$<$ T $>$@{AVLTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily template$<$class \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ \\
+void \mbox{\hyperlink{class_a_v_l_tree}{AVLTree}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$\+::insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}}}]{key }\end{DoxyParamCaption})}
+
+
+
+Function to insert a node into the AVL tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The data value of the node to be inserted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_v_l_tree_aadf22099dc75a4d91baedc02896827d0}\label{class_a_v_l_tree_aadf22099dc75a4d91baedc02896827d0}} 
+\index{AVLTree$<$ T $>$@{AVLTree$<$ T $>$}!leftRotate@{leftRotate}}
+\index{leftRotate@{leftRotate}!AVLTree$<$ T $>$@{AVLTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{leftRotate()}{leftRotate()}}
+{\footnotesize\ttfamily template$<$class \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ \\
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree}{AVLTree}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$\+::left\+Rotate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$}]{y }\end{DoxyParamCaption})}
+
+
+
+Function to left rotate at a node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & The AVL tree node at which left rotation has to be done \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_v_l_tree_a484b873a133486d318b7e0d72c9c9a3d}\label{class_a_v_l_tree_a484b873a133486d318b7e0d72c9c9a3d}} 
+\index{AVLTree$<$ T $>$@{AVLTree$<$ T $>$}!predecessor@{predecessor}}
+\index{predecessor@{predecessor}!AVLTree$<$ T $>$@{AVLTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{predecessor()}{predecessor()}}
+{\footnotesize\ttfamily template$<$class \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ \\
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree}{AVLTree}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$\+::predecessor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$}]{ro,  }\item[{\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$}]{node }\end{DoxyParamCaption})}
+
+
+
+Function to find the predecessor to the given node of the AVL tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ro} & The pointer to the root of the AVL tree \\
+\hline
+{\em node} & The pointer to the node whose predecessor has to be found \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the predecessor the AVL tree node 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_v_l_tree_ade818c5c2e65452067eeabe7d6805f05}\label{class_a_v_l_tree_ade818c5c2e65452067eeabe7d6805f05}} 
+\index{AVLTree$<$ T $>$@{AVLTree$<$ T $>$}!remove@{remove}}
+\index{remove@{remove}!AVLTree$<$ T $>$@{AVLTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily template$<$class \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ \\
+void \mbox{\hyperlink{class_a_v_l_tree}{AVLTree}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}}}]{key }\end{DoxyParamCaption})}
+
+
+
+Function to delete a node from an AVL tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The data value of the node to be deleted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_v_l_tree_a8056deee1d30dc8a3547ce193c72d048}\label{class_a_v_l_tree_a8056deee1d30dc8a3547ce193c72d048}} 
+\index{AVLTree$<$ T $>$@{AVLTree$<$ T $>$}!rightRotate@{rightRotate}}
+\index{rightRotate@{rightRotate}!AVLTree$<$ T $>$@{AVLTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{rightRotate()}{rightRotate()}}
+{\footnotesize\ttfamily template$<$class \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ \\
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree}{AVLTree}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$\+::right\+Rotate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$}]{x }\end{DoxyParamCaption})}
+
+
+
+Function to right rotate at a node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The AVL tree node at which right rotation has to be done \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_v_l_tree_a502a38fdc467269fc319f14681a7ac18}\label{class_a_v_l_tree_a502a38fdc467269fc319f14681a7ac18}} 
+\index{AVLTree$<$ T $>$@{AVLTree$<$ T $>$}!search@{search}}
+\index{search@{search}!AVLTree$<$ T $>$@{AVLTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily template$<$class \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ \\
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree}{AVLTree}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$\+::search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}}}]{key }\end{DoxyParamCaption})}
+
+
+
+Function to find the node having data value equal to the key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key value which has to be searched in the tree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the node having data value equal to key 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_v_l_tree_ad4d48a1bd3ffe5f30ed3320474e818a4}\label{class_a_v_l_tree_ad4d48a1bd3ffe5f30ed3320474e818a4}} 
+\index{AVLTree$<$ T $>$@{AVLTree$<$ T $>$}!successor@{successor}}
+\index{successor@{successor}!AVLTree$<$ T $>$@{AVLTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{successor()}{successor()}}
+{\footnotesize\ttfamily template$<$class \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ \\
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$ \mbox{\hyperlink{class_a_v_l_tree}{AVLTree}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$\+::successor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$}]{ro,  }\item[{\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ $\ast$}]{node }\end{DoxyParamCaption})}
+
+
+
+Function to find the successor to the given node of the AVL tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ro} & The pointer to the root of the AVL tree \\
+\hline
+{\em node} & The pointer to the node whose successsor has to be found \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the successor the AVL tree node 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_v_l_tree_a6786acad42810093ea3dbfdf24234e29}\label{class_a_v_l_tree_a6786acad42810093ea3dbfdf24234e29}} 
+\index{AVLTree$<$ T $>$@{AVLTree$<$ T $>$}!cmp@{cmp}}
+\index{cmp@{cmp}!AVLTree$<$ T $>$@{AVLTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{cmp}{cmp}}
+{\footnotesize\ttfamily template$<$class \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ \\
+int($\ast$ \mbox{\hyperlink{class_a_v_l_tree}{AVLTree}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$\+::cmp) (\mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}}, \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Comparator function of the AVL Tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T1} & The first parameter of comparision \\
+\hline
+{\em T2} & The second parameter of comparision \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 if T1\texorpdfstring{$<$}{<}T2 
+
+0 if T1==T2 
+
+1 if T1\texorpdfstring{$>$}{>}T2 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_v_l_tree_a105ef59828145f6465c4fe3620342f5f}\label{class_a_v_l_tree_a105ef59828145f6465c4fe3620342f5f}} 
+\index{AVLTree$<$ T $>$@{AVLTree$<$ T $>$}!root@{root}}
+\index{root@{root}!AVLTree$<$ T $>$@{AVLTree$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily template$<$class \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$ \\
+\mbox{\hyperlink{class_a_v_l_node}{AVLNode}}$<$\mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}}$>$$\ast$ \mbox{\hyperlink{class_a_v_l_tree}{AVLTree}}$<$ \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} $>$\+::root}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+AVL/\mbox{\hyperlink{_a_v_l_tree_8h}{AVLTree.\+h}}\item 
+AVL/\mbox{\hyperlink{_a_v_l_tree_8cpp}{AVLTree.\+cpp}}\end{DoxyCompactItemize}

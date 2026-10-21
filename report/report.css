@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+.heading {
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(240, 241, 255));
+}
+.heading h1 {
+    text-align: center;
+}
+.heading h2 {
+    text-align: center;
+}
+.para {
+    background: rgb(252, 255, 237);
+    height: fit-content;
+    border: 1px solid;
+    border-color: rgb(218, 216, 216);
+    border-radius: 25px;
+    padding: 1rem;
+    width: 98%;
+    margin-left: 1%;
+    box-shadow: 5px 10px 5px 5px rgb(255, 229, 156);
+}
+.para1 {
+    background: rgb(252, 255, 237);
+    height: fit-content;
+    border: 1px solid;
+    border-color: rgb(218, 216, 216);
+    border-radius: 25px;
+    padding: 1rem;
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 40px;
+    box-shadow: 5px 10px 5px 5px  rgb(255, 229, 156);
+}
+
+.para2 {
+    background: rgb(237, 248, 255);
+    height: fit-content;
+    border: 1px solid;
+    border-color: rgb(218, 216, 216);
+    border-radius: 25px;
+    padding: 1rem;
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 40px;
+    box-shadow: 5px 10px 5px 5px rgb(156, 202, 255);
+}
+.tc {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding: 1rem;
+    border: 1px solid;
+    border-radius: 1rem;
+    border-color: rgb(255, 214, 154);
+}
+.testcase {
+    border: 3px solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 1rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 1rem;
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 0;
+    float: left;
+
+}
+.tcimg {
+    border: 3px solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 1rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 1rem;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 50px;
+    float: right;
+}

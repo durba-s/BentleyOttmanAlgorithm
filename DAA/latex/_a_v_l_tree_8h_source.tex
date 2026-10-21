@@ -1,0 +1,141 @@
+\hypertarget{_a_v_l_tree_8h_source}{}\doxysection{AVLTree.\+h}
+\label{_a_v_l_tree_8h_source}\index{AVL/AVLTree.h@{AVL/AVLTree.h}}
+\mbox{\hyperlink{_a_v_l_tree_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_\_AVL\_Tree\_H\_\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_\_AVL\_Tree\_H\_\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_a_v_l_node_8h}{AVLNode.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <algorithm>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{11 \textcolor{keyword}{template}<\textcolor{keyword}{class} T>}
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_a_v_l_tree}{AVLTree}}\{}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14     \textcolor{keyword}{public}:}
+\DoxyCodeLine{15         \textcolor{comment}{//root of the AVL tree}}
+\DoxyCodeLine{16         \mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* \mbox{\hyperlink{class_a_v_l_tree_a105ef59828145f6465c4fe3620342f5f}{root}};}
+\DoxyCodeLine{17         }
+\DoxyCodeLine{23         \mbox{\hyperlink{class_a_v_l_tree_a969c9c3cb990b1d79357cde4ecb6bb6b}{AVLTree}}(\textcolor{keywordtype}{int} (*\_cmp)(\mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} , \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}})) : \mbox{\hyperlink{class_a_v_l_tree_a6786acad42810093ea3dbfdf24234e29}{cmp}}(\_cmp) , \mbox{\hyperlink{class_a_v_l_tree_a105ef59828145f6465c4fe3620342f5f}{root}}(NULL) \{\}}
+\DoxyCodeLine{24         \mbox{\hyperlink{class_a_v_l_tree_ae7bb44a235074a48d817acbc32846ae7}{\string~AVLTree}}() \{\}}
+\DoxyCodeLine{25         }
+\DoxyCodeLine{31         \mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* \mbox{\hyperlink{class_a_v_l_tree_aadf22099dc75a4d91baedc02896827d0}{leftRotate}}(\mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* y);}
+\DoxyCodeLine{32         }
+\DoxyCodeLine{38         \mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* \mbox{\hyperlink{class_a_v_l_tree_a8056deee1d30dc8a3547ce193c72d048}{rightRotate}}(\mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* x);}
+\DoxyCodeLine{39         }
+\DoxyCodeLine{47         \mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* \mbox{\hyperlink{class_a_v_l_tree_a858c71ef796e8a26366f1f0f63830342}{balance}}(\mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* node , \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} key);}
+\DoxyCodeLine{48         }
+\DoxyCodeLine{55         \mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* \mbox{\hyperlink{class_a_v_l_tree_a87d816e7556ace89845c851d16851312}{findMin}}(\mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* node);}
+\DoxyCodeLine{56         }
+\DoxyCodeLine{63         \mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* \mbox{\hyperlink{class_a_v_l_tree_a4c3aa2ac78e409b81756e71362a8142f}{findMax}}(\mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* node);}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{72         \mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* \mbox{\hyperlink{class_a_v_l_tree_ad4d48a1bd3ffe5f30ed3320474e818a4}{successor}}(\mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* ro,\mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* node);}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{81         \mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* \mbox{\hyperlink{class_a_v_l_tree_a484b873a133486d318b7e0d72c9c9a3d}{predecessor}}(\mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* ro,\mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* node);}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{90         \mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* \mbox{\hyperlink{class_a_v_l_tree_a5b09f689c4f180734665b7ed70b9e21c}{find\_right}}(\mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* node, \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} key);}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{99         \mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* \mbox{\hyperlink{class_a_v_l_tree_a0f4906a0ccbeb944c1460eb098963cc8}{find\_left}}(\mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* node, \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} key);}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{106         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_v_l_tree_a927bd30501e7730318348bf8b7ec9848}{insert}}(\mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} key);}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{113         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_a_v_l_tree_ade818c5c2e65452067eeabe7d6805f05}{remove}}(\mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} key);}
+\DoxyCodeLine{114 }
+\DoxyCodeLine{121         \mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* \mbox{\hyperlink{class_a_v_l_tree_a502a38fdc467269fc319f14681a7ac18}{search}}(\mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} key);}
+\DoxyCodeLine{122 }
+\DoxyCodeLine{123     \textcolor{keyword}{private}:}
+\DoxyCodeLine{133         int (*\mbox{\hyperlink{class_a_v_l_tree_a6786acad42810093ea3dbfdf24234e29}{cmp}})(\mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} , \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}}); \textcolor{comment}{// returns -\/1 if arg1 < arg2, 0 if arg1=arg2, 1 if arg1>arg2}}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{142         \mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* \mbox{\hyperlink{class_a_v_l_tree_a314c787ec96fabf4fedd46054cfb4365}{\_insert}}(\mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* node , \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} key);}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{151         \mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* \mbox{\hyperlink{class_a_v_l_tree_a231554eb45f5b9ceaa66b3fd1051160c}{\_remove}}(\mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* node , \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} key);}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{160         \mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* \mbox{\hyperlink{class_a_v_l_tree_a91134c644a402927f4dfcd0e10ea62e1}{\_search}}(\mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* node , \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} key);}
+\DoxyCodeLine{161 }
+\DoxyCodeLine{162 \};}
+\DoxyCodeLine{163 }
+\DoxyCodeLine{169 \textcolor{keyword}{template}<\textcolor{keyword}{class} T>}
+\DoxyCodeLine{170 \textcolor{keywordtype}{void} \mbox{\hyperlink{_a_v_l_tree_8h_a72b855ed3dc67680557842763de120ad}{preorder}}(\mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* node);}
+\DoxyCodeLine{171 }
+\DoxyCodeLine{177 \textcolor{keyword}{template}<\textcolor{keyword}{class} T>}
+\DoxyCodeLine{178 \textcolor{keywordtype}{void} \mbox{\hyperlink{_a_v_l_tree_8h_a777dfeb90555ef4b2031a57374a0faa6}{inorder}}(\mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* node);}
+\DoxyCodeLine{179 }
+\DoxyCodeLine{180 \textcolor{keyword}{template}<\textcolor{keyword}{class} T>}
+\DoxyCodeLine{181 \mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* \mbox{\hyperlink{class_a_v_l_tree_a314c787ec96fabf4fedd46054cfb4365}{AVLTree<T>::\_insert}}(\mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* node , \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} key)\{}
+\DoxyCodeLine{182     \textcolor{keywordflow}{if}(node == NULL)}
+\DoxyCodeLine{183         \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}(key);}
+\DoxyCodeLine{184     }
+\DoxyCodeLine{185     \textcolor{keywordflow}{if}(cmp(key , node -\/> data)<0)}
+\DoxyCodeLine{186         node -\/> left = \_insert(node -\/> left , key);}
+\DoxyCodeLine{187     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cmp(key, node -\/> data)>0)}
+\DoxyCodeLine{188             node -\/> right = \_insert(node -\/> right , key);}
+\DoxyCodeLine{189 }
+\DoxyCodeLine{190     \textcolor{keywordflow}{return} balance(node , key);}
+\DoxyCodeLine{191 \}}
+\DoxyCodeLine{192 }
+\DoxyCodeLine{193 \textcolor{keyword}{template}<\textcolor{keyword}{class} T>}
+\DoxyCodeLine{194 \mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* \mbox{\hyperlink{class_a_v_l_tree_a231554eb45f5b9ceaa66b3fd1051160c}{AVLTree<T>::\_remove}}(\mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* node , \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} key)\{}
+\DoxyCodeLine{195 }
+\DoxyCodeLine{196     \textcolor{keywordflow}{if}(node == NULL)}
+\DoxyCodeLine{197         \textcolor{keywordflow}{return} node;}
+\DoxyCodeLine{198     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cmp(key,node -\/> data)<0)}
+\DoxyCodeLine{199         node -\/> left = \_remove(node -\/> left , key);}
+\DoxyCodeLine{200     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cmp(key,node -\/> data)>0)}
+\DoxyCodeLine{201         node -\/> right = \_remove(node -\/> right , key);}
+\DoxyCodeLine{202     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(node -\/> left \&\& node -\/> right)\{}
+\DoxyCodeLine{203         \mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* temp = findMin(node -\/> right);}
+\DoxyCodeLine{204         node -\/> data = temp -\/> data;}
+\DoxyCodeLine{205         node -\/> right = \_remove(node -\/> right , temp -\/> data);}
+\DoxyCodeLine{206     \}}
+\DoxyCodeLine{207     \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{208         \mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* temp = node;}
+\DoxyCodeLine{209         \textcolor{keywordflow}{if}(node -\/> left == NULL)}
+\DoxyCodeLine{210             node = node -\/> right;}
+\DoxyCodeLine{211         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(node -\/> right == NULL)}
+\DoxyCodeLine{212             node = node -\/> left;}
+\DoxyCodeLine{213         \textcolor{keyword}{delete} temp;}
+\DoxyCodeLine{214     \}}
+\DoxyCodeLine{215     \textcolor{keywordflow}{if}(node == NULL)}
+\DoxyCodeLine{216         \textcolor{keywordflow}{return} node;}
+\DoxyCodeLine{217     }
+\DoxyCodeLine{218     node-\/>\mbox{\hyperlink{class_a_v_l_node_a04910843d3ea0111eb3dcfe92a8f7588}{height}} = std::max(node -\/> left -\/> getHeight() , node -\/> right -\/> getHeight()) + 1;}
+\DoxyCodeLine{219     \textcolor{keywordtype}{int} bf = node -\/> getBF();}
+\DoxyCodeLine{220     \textcolor{keywordflow}{if} (bf > 1 \&\& node-\/>\mbox{\hyperlink{class_a_v_l_node_a7a9fcdb847842e26a795337dcdca273b}{left}}-\/>\mbox{\hyperlink{class_a_v_l_node_aface9e90479a2ceea04f994846780488}{getBF}}() >= 0)}
+\DoxyCodeLine{221         \textcolor{keywordflow}{return} rightRotate(node);}
+\DoxyCodeLine{222  }
+\DoxyCodeLine{223     \textcolor{comment}{// Left Right Case}}
+\DoxyCodeLine{224     \textcolor{keywordflow}{if} (bf > 1 \&\& node-\/>\mbox{\hyperlink{class_a_v_l_node_a7a9fcdb847842e26a795337dcdca273b}{left}}-\/>\mbox{\hyperlink{class_a_v_l_node_aface9e90479a2ceea04f994846780488}{getBF}}() < 0)}
+\DoxyCodeLine{225     \{}
+\DoxyCodeLine{226         node-\/>\mbox{\hyperlink{class_a_v_l_node_a7a9fcdb847842e26a795337dcdca273b}{left}} = leftRotate(node-\/>\mbox{\hyperlink{class_a_v_l_node_a7a9fcdb847842e26a795337dcdca273b}{left}});}
+\DoxyCodeLine{227         \textcolor{keywordflow}{return} rightRotate(node);}
+\DoxyCodeLine{228     \}}
+\DoxyCodeLine{229  }
+\DoxyCodeLine{230     \textcolor{comment}{// Right Right Case}}
+\DoxyCodeLine{231     \textcolor{keywordflow}{if} (bf < -\/1 \&\& node-\/>right-\/>getBF() <= 0)}
+\DoxyCodeLine{232         \textcolor{keywordflow}{return} leftRotate(node);}
+\DoxyCodeLine{233  }
+\DoxyCodeLine{234     \textcolor{comment}{// Right Left Case}}
+\DoxyCodeLine{235     \textcolor{keywordflow}{if} (bf < -\/1 \&\& node-\/>right-\/>getBF() > 0)}
+\DoxyCodeLine{236     \{}
+\DoxyCodeLine{237         node-\/>\mbox{\hyperlink{class_a_v_l_node_a506817bc14b2a3012526dd7a832013cc}{right}} = rightRotate(node-\/>\mbox{\hyperlink{class_a_v_l_node_a506817bc14b2a3012526dd7a832013cc}{right}});}
+\DoxyCodeLine{238         \textcolor{keywordflow}{return} leftRotate(node);}
+\DoxyCodeLine{239     \}}
+\DoxyCodeLine{240     \textcolor{keywordflow}{return} node;}
+\DoxyCodeLine{241 \}}
+\DoxyCodeLine{242 }
+\DoxyCodeLine{243 \textcolor{keyword}{template}<\textcolor{keyword}{class} T>}
+\DoxyCodeLine{244 \mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* \mbox{\hyperlink{class_a_v_l_tree_a91134c644a402927f4dfcd0e10ea62e1}{AVLTree<T>::\_search}}(\mbox{\hyperlink{class_a_v_l_node}{AVLNode<T>}}* node , \mbox{\hyperlink{utils_8cpp_add06d4ef0bf44498dbed049f467d5f36}{T}} key)\{}
+\DoxyCodeLine{245     \textcolor{keywordflow}{if}(node == NULL)}
+\DoxyCodeLine{246         \textcolor{keywordflow}{return} node;}
+\DoxyCodeLine{247     \textcolor{keywordflow}{if}(cmp(node-\/>\mbox{\hyperlink{class_a_v_l_node_ab08e416fe66d8a13f8f9431c25baed79}{data}},key)==0)}
+\DoxyCodeLine{248         \textcolor{keywordflow}{return} node;}
+\DoxyCodeLine{249     \textcolor{keywordflow}{if}(cmp(key,node-\/>\mbox{\hyperlink{class_a_v_l_node_ab08e416fe66d8a13f8f9431c25baed79}{data}})<0)}
+\DoxyCodeLine{250         \textcolor{keywordflow}{return} \_search(node-\/>\mbox{\hyperlink{class_a_v_l_node_a7a9fcdb847842e26a795337dcdca273b}{left}} , key);}
+\DoxyCodeLine{251     \textcolor{keywordflow}{return} \_search(node-\/>\mbox{\hyperlink{class_a_v_l_node_a506817bc14b2a3012526dd7a832013cc}{right}} , key);}
+\DoxyCodeLine{252 \}}
+\DoxyCodeLine{253 }
+\DoxyCodeLine{254 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_a_v_l_tree_8cpp}{AVLTree.cpp}}"{}}}
+\DoxyCodeLine{255 }
+\DoxyCodeLine{256 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// \_\_AVL\_Tree\_H\_\_}}
+
+\end{DoxyCode}

@@ -1,0 +1,42 @@
+\hypertarget{utils_8h_source}{}\doxysection{utils.\+h}
+\mbox{\hyperlink{utils_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_a_v_l_tree_8h}{AVL/AVLTree.h}}"{}}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_a_v_l_node_8h}{AVL/AVLNode.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_segment_8h}{Segment.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_point_8h}{Point.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include<iostream>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include<vector>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{8 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{13 \textcolor{keyword}{const} \textcolor{keywordtype}{double} \mbox{\hyperlink{utils_8h_a3d8c24629d725b9ef8c238cf27c9b158}{eps}} = 0.0000000001;}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{22 \textcolor{keywordtype}{bool} \mbox{\hyperlink{utils_8h_a354010b9ea24b630d673e3fa5cd2e652}{isHor}}(\mbox{\hyperlink{class_segment}{Segment<double>}}* s);}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{31 \textcolor{keywordtype}{bool} \mbox{\hyperlink{utils_8h_adc2e8c295268782dc12e8c694bdb49cd}{isVer}}(\mbox{\hyperlink{class_segment}{Segment<double>}}* s);}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{41 \textcolor{keywordtype}{bool} \mbox{\hyperlink{utils_8h_abfa77a43d3008e5bf6230fecd214dfd6}{isContained}}(\mbox{\hyperlink{class_segment}{Segment<double>}}* s,pair<double,double> p);}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{51 \textcolor{keywordtype}{bool} \mbox{\hyperlink{utils_8h_aa7595a206d2209d6d3e60751af0d9a98}{doesIntersect}}(\mbox{\hyperlink{class_segment}{Segment<double>}}* Sl,\mbox{\hyperlink{class_segment}{Segment<double>}}* Sr);}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{59 \textcolor{keywordtype}{double} \mbox{\hyperlink{utils_8h_ac3116ddcc3df85e718e2e89ffc4aff22}{sweepIntersection}}(\mbox{\hyperlink{class_segment}{Segment<double>}}* s);}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{68 pair<double,double> \mbox{\hyperlink{utils_8h_ada35be1502ee1fe37edb8d04c69e5feb}{intersection}}(\mbox{\hyperlink{class_segment}{Segment<double>}}* s1,\mbox{\hyperlink{class_segment}{Segment<double>}}* s2);}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{79 \textcolor{keywordtype}{int} \mbox{\hyperlink{utils_8h_a2b8c31cc52f0805aa9068a9dcf84dc83}{Q\_cmp}}(\mbox{\hyperlink{class_point}{Point<double>}} *p1,\mbox{\hyperlink{class_point}{Point<double>}} *p2);}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{90 \textcolor{keywordtype}{int} \mbox{\hyperlink{utils_8h_a0c295390053492b42bf51a79cd15b445}{T\_cmp}}(\mbox{\hyperlink{class_segment}{Segment<double>}} *s1,\mbox{\hyperlink{class_segment}{Segment<double>}} *s2);}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{99 \textcolor{keywordtype}{int} \mbox{\hyperlink{utils_8h_a5ca6bd124fb9fcaba34a1562205a0bc1}{findIntersections}}(vector< \mbox{\hyperlink{class_segment}{Segment<double>}}* > S, \textcolor{keywordtype}{int} n);}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{105 \textcolor{keywordtype}{void} \mbox{\hyperlink{utils_8h_a5162984501235d40aa4660184e491222}{handleEventPoint}}(\mbox{\hyperlink{class_point}{Point<double>}} *p);}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{114 \textcolor{keywordtype}{void} \mbox{\hyperlink{utils_8h_a1f8654cc869c28d3b35c3bed51d42313}{findNewEvent}}(\mbox{\hyperlink{class_segment}{Segment<double>}}* Sl,\mbox{\hyperlink{class_segment}{Segment<double>}}* Sr,\mbox{\hyperlink{class_point}{Point<double>}} *p);}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{121 \textcolor{keywordtype}{void} \mbox{\hyperlink{utils_8h_adae247c0ff8514f7cd920a0b3afaef32}{reportIntersection}}(\mbox{\hyperlink{class_point}{Point<double>}} *p);}
+\DoxyCodeLine{122 }
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124 \textcolor{keywordtype}{int} \mbox{\hyperlink{utils_8h_aaf7b91ef7646f48d94389855ddfb50c4}{findIntersection}}(vector< \mbox{\hyperlink{class_segment}{Segment<double>}}* > S, \textcolor{keywordtype}{int} n);}
+
+\end{DoxyCode}
