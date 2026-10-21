@@ -10,9 +10,9 @@
 
 ```cpp
 /**
- * Ankita Behera 2019A7PS0075H
  * Durba Satpathi 2019A7PS0972H
  * Prakhar Agarwal 2019A7PS0174H
+ * Ankita Behera 2019A7PS0075H
  **/
 ```
 
@@ -57,16 +57,16 @@ In this algorithm, we repeatedly check immediate neighbouring line segments for 
 <summary><b>Click to expand Algorithm Visualization (Sweep Line Steps)</b></summary>
 <br>
 
-![Step 1](./algo/a1.png)
-![Step 2](./algo/a2.png)
-![Step 3](./algo/a3.png)
-![Step 4](./algo/a4.png)
-![Step 5](./algo/a5.png)
-![Step 6](./algo/a6.png)
-![Step 7](./algo/a7.png)
-![Step 8](./algo/a8.png)
-![Step 9](./algo/a9.png)
-![Step 10](./algo/a10.png)
+![Step 1](./report/algo/a1.png)
+![Step 2](./report/algo/a2.png)
+![Step 3](./report/algo/a3.png)
+![Step 4](./report/algo/a4.png)
+![Step 5](./report/algo/a5.png)
+![Step 6](./report/algo/a6.png)
+![Step 7](./report/algo/a7.png)
+![Step 8](./report/algo/a8.png)
+![Step 9](./report/algo/a9.png)
+![Step 10](./report/algo/a10.png)
 
 </details>
 
@@ -80,10 +80,10 @@ The theoretical time complexity of the algorithm is `O(i log n + n log n)`, wher
 ### Timing Analysis - Plots
 
 **`i` vs `t` plot (with n = 1e6)**<br>
-![i vs t plot](./ivst.png)
+![i vs t plot](./report/ivst.png)
 
 **`n log n` vs `t` plot**<br>
-![nlogn vs t plot](./nvst1.png)
+![nlogn vs t plot](./report/nvst1.png)
 
 ---
 
@@ -92,7 +92,7 @@ The theoretical time complexity of the algorithm is `O(i log n + n log n)`, wher
 #### Primary Test Case
 **Visualization:**
 
-![Plot 1](./plot1.png)
+![Plot 1](./report/plot1.png)
 
 **Input:**
 ```text
@@ -122,13 +122,13 @@ The theoretical time complexity of the algorithm is `O(i log n + n log n)`, wher
 
 | | |
 |:---:|:---:|
-| ![Plot 2](./plot2.png) | ![Plot 3](./plot3.png) |
-| ![Plot 7](./plot7.png) | ![Plot 8](./plot8.png) |
+| ![Plot 2](./report/plot2.png) | ![Plot 3](./report/plot3.png) |
+| ![Plot 7](./report/plot7.png) | ![Plot 8](./report/plot8.png) |
 
 ---
 
 ### Degeneracies - Plots
 
-![Degeneracies Plot](./plot6.png)
+![Degeneracies Plot](./report/plot6.png)
 
 When the points are too close to each other due to floating point precision limits, we sometimes capture fewer than the true number of intersection points.
